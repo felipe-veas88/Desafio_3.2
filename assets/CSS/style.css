@@ -1,0 +1,198 @@
+body {
+  background-image: url("/assets/IMG/fondo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-family: "Press Start 2P", cursive;
+  color: #333;
+}
+
+p {
+  font-family: "Press Start 2P", cursive;
+  color: #666;
+}
+
+.welcomeImg {
+  width: 100%;
+  height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.cupon-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cupon {
+  width: 35%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  margin: 2em;
+}
+
+/* Estilo para el botón */
+.cupon-container .btn {
+  display: block;
+  margin-top: 1rem; /* Espacio entre la imagen del cupón y el botón */
+  font-size: 1.5rem; /* Aumenta el tamaño del texto */
+  padding: 1rem 2rem; /* Aumenta el tamaño del botón */
+}
+
+/* Footer */
+.footer {
+  padding: 2rem;
+  text-align: center;
+  font-size: 18px;
+  background-color: #ffcc01;
+  border-bottom: 0px;
+}
+
+.footer .logos img {
+  margin: 0 10px;
+  width: 30px;
+  height: 30px;
+  transition: opacity 0.2s;
+  cursor: pointer;
+}
+
+.footer .logos img:hover {
+  opacity: 0.7;
+}
+
+.cupon.active {
+  border: 2px solid red;
+}
+
+/* Estilos para la galería de stickers */
+.galeria {
+  background: #ffcc01;
+  display: flex;
+  flex-wrap: wrap; /* Permite que los stickers se ajusten en varias líneas */
+  justify-content: center; /* Centra los stickers horizontalmente */
+  gap: 20px; /* Espacio entre los stickers */
+  padding: 2rem; /* Añade un espacio interno al contenedor */
+}
+
+.galeria .sticker {
+  flex: 1 1 20%; /* Ajusta el tamaño de cada sticker al 20% del ancho del contenedor padre */
+  margin: 1rem; /* Espacio entre cada sticker */
+  text-align: center; /* Centra el contenido del sticker */
+}
+
+.galeria .sticker img {
+  width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.galeria .cantidad {
+  margin-top: 0.5rem; /* Ajusta el espacio entre la imagen y el input */
+  width: 50px; /* Ajusta el ancho del input */
+}
+
+/* Estilos para el contenedor principal */
+.container {
+  flex-grow: 1; /* Hace que la galería ocupe todo el espacio disponible */
+  padding: 2rem; /* Añade un espacio interno al contenedor */
+}
+
+/* Estilo para el botón Verificar */
+#verificarBtn {
+  margin-top: 2rem; /* Espacio entre la galería y el botón */
+  align-self: center; /* Centra el botón horizontalmente */
+  font-size: 1.5rem; /* Aumenta el tamaño del texto */
+  padding: 1rem 2rem; /* Aumenta el tamaño del botón */
+}
+
+/* Estilos para el modal */
+.modal {
+  display: none; /* Por defecto, el modal no está visible */
+  position: fixed; /* Permanece en la misma posición en la página */
+  z-index: 1; /* Encima de todo el contenido */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Hace que el contenido sea scrollable si es necesario */
+  background-color: rgba(0, 0, 0, 0.4); /* Fondo semi-transparente */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* Centra el modal verticalmente */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+  text-align: center;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.contador {
+  background: #ffcc01;
+  padding: 1em;
+  border: 1em;
+  text-align: center;
+  font-size: larger;
+}
+
+.dropdown {
+  align-items: center;
+  background: #ffcc01;
+  border: 3em;
+  padding: 4em;
+}
+
+.contador {
+  padding: 4em;
+  border: 4em;
+}
+
+.primerpass {
+  padding: 4em;
+  border: 4em;
+}
+
+.dropdown {
+  display: flex; /* Utilizamos flexbox para alinear el contenido */
+  justify-content: center; /* Centra horizontalmente el contenido */
+  align-items: center; /* Centra verticalmente el contenido */
+  text-align: center; /* Alinea el texto dentro del contenedor */
+  background: #ffcc01;
+  padding: 4em; /* Ajusta el padding según tus necesidades */
+}
+
+.cupon.active {
+  border: 2px solid red;
+}
+
+.msgSecreto {
+  background: #ffcc01;
+  text-align: center;
+  font-size: xx-large;
+  padding: 2em;
+}
